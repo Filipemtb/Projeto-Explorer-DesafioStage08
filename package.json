@@ -1,7 +1,7 @@
 {
   "name": "backend---cadastrandofilme",
   "version": "1.0.0",
-  "description": "",
+  "description": "Aplicação desenvolvida no programa Explorer da rocketseat",
   "main": "index.js",
   "scripts": {
     "start": "node ./src/server.js",
