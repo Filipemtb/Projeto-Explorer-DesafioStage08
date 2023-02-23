@@ -1,16 +1,19 @@
 require("express-async-errors");
 
-const AppError = require("./utils/AppError")
+const database = require("./database/sqlite");
+
+const AppError = require("./utils/AppError");
 
 const express = require("express");  //Importando o express do Node_modules
 
 const routes = require("./routes");
 
-
 const app = express();
 app.use(express.json());
 
 app.use(routes);
+
+database()
 
 // Extraindo error por parte do cliente
 app.use(( error, request, respose, next ) => {
