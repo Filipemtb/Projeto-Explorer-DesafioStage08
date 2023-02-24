@@ -17,9 +17,9 @@ app.use(routes);
 
 
 // Extraindo error por parte do cliente
-app.use(( error, request, respose, next ) => {
+app.use(( error, request, response, next ) => {
     if(error instanceof AppError) {
-        return respose.status(error.statusCode).json({
+        return response.status(error.statusCode).json({
             status: "error",
             message: error.message
         });
