@@ -4,7 +4,7 @@ const migrationsRun = require("./database/sqlite/migrations");
 
 const AppError = require("./utils/AppError");
 
-const express = require("express");  //Importando o express do Node_modules
+const express = require("express");  
 
 const routes = require("./routes");
 
